@@ -18,6 +18,7 @@ namespace YipYip22.Services
         }
         public bool CreateProfile(ProfileCreate model)
         {
+            
             var entity =
                 new Profile()
                 {

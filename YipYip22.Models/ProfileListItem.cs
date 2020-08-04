@@ -14,7 +14,7 @@ namespace YipYip22.Models
         [Display(Name = "Name")]
         public string ProfileName { get; set; }
         [Display(Name = "Phone")]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Display(Name = "Email")]
         public string Email { get; set; }
         [Display(Name = "Rating")]
