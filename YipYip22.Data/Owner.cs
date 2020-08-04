@@ -24,7 +24,7 @@ namespace YipYip22.Data
         public int? Rating { get; set; }
         [Required]
         public DateTime Created { get; set; }
-        [ForeignKey(nameof(ProfileId))]
+        [ForeignKey(nameof(Profile))]
         [Required]
         public int ProfileId { get; set; }
         public virtual Profile Profile { get; set; }

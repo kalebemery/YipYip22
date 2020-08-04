@@ -29,8 +29,15 @@ namespace YipYip22.WebApi.Controllers
         private AttractionService CreateAttractionService()
         {
             var userid = Guid.Parse(User.Identity.GetUserId());
-            var noteservice = new AttractionService();
+            var noteservice = new AttractionService(userid);
             return noteservice;
+        }
+        //READ
+        public IHttpActionResult Get()
+        {
+            AttractionService attractionService = CreateAttractionService();
+            var attractions = attractionService.GetAllAttractions();
+            return Ok(attractions);
         }
         //Update
         //public IHttpActionResult Put(AttractionEdit note)
@@ -45,5 +52,6 @@ namespace YipYip22.WebApi.Controllers
 
         //    return Ok();
         //}
+
     }
 }

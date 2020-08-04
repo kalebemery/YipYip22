@@ -9,7 +9,7 @@ namespace YipYip22.Data
 {
     public enum Location
     {
-        DowntownIndy =1,
+        DowntownIndy = 1,
         BroadRipple,
         Speedway,
         Carmel,
@@ -22,7 +22,6 @@ namespace YipYip22.Data
         Avon,
         Brownsburg
     }
-
     public class Attraction
     {
         [Key]

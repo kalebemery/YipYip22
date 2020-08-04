@@ -86,6 +86,15 @@
   <ItemGroup>
     <Compile Include="Attraction.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202008041740183_InitialCreate.cs" />
+    <Compile Include="Migrations\202008041740183_InitialCreate.Designer.cs">
+      <DependentUpon>202008041740183_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008041933275_Seed Attrction Table.cs" />
+    <Compile Include="Migrations\202008041933275_Seed Attrction Table.Designer.cs">
+      <DependentUpon>202008041933275_Seed Attrction Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +103,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008041740183_InitialCreate.resx">
+      <DependentUpon>202008041740183_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008041933275_Seed Attrction Table.resx">
+      <DependentUpon>202008041933275_Seed Attrction Table.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
