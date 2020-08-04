@@ -54,10 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttractionCreate.cs" />
+    <Compile Include="AttractionEdit.cs" />
+    <Compile Include="AttractionListItem.cs" />
     <Compile Include="OwnerCreate.cs" />
     <Compile Include="OwnerDetail.cs" />
     <Compile Include="OwnerEdit.cs" />
-    <Compile Include="OwnerListItem.cs" />
     <Compile Include="ProfileCreate.cs" />
     <Compile Include="ProfileDetail.cs" />
     <Compile Include="ProfileEdit.cs" />
@@ -71,6 +73,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YipYip22.Data\YipYip22.Data.csproj">
+      <Project>{B7488097-7A5C-4F68-8201-952903E2A02D}</Project>
+      <Name>YipYip22.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
