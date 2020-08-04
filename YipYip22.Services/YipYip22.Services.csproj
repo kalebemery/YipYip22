@@ -54,11 +54,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttractionService.cs" />
+    <Compile Include="OwnerService.cs" />
+    <Compile Include="ProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YipYip22.Data\YipYip22.Data.csproj">
+      <Project>{B7488097-7A5C-4F68-8201-952903E2A02D}</Project>
+      <Name>YipYip22.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YipYip22.Models\YipYip22.Models.csproj">
+      <Project>{E0F59E51-856A-4E42-8332-A240AFEC7070}</Project>
+      <Name>YipYip22.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
