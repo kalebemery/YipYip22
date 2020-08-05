@@ -86,9 +86,13 @@
   <ItemGroup>
     <Compile Include="Attraction.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202008012147138_InitialCreate.cs" />
-    <Compile Include="Migrations\202008012147138_InitialCreate.Designer.cs">
-      <DependentUpon>202008012147138_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202008041740183_InitialCreate.cs" />
+    <Compile Include="Migrations\202008041740183_InitialCreate.Designer.cs">
+      <DependentUpon>202008041740183_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008041933275_Seed Attrction Table.cs" />
+    <Compile Include="Migrations\202008041933275_Seed Attrction Table.Designer.cs">
+      <DependentUpon>202008041933275_Seed Attrction Table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202008041743278_Migration1.cs" />
     <Compile Include="Migrations\202008041743278_Migration1.Designer.cs">
@@ -105,8 +109,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008041740183_InitialCreate.resx">
+      <DependentUpon>202008041740183_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008041933275_Seed Attrction Table.resx">
+      <DependentUpon>202008041933275_Seed Attrction Table.cs</DependentUpon>
     <EmbeddedResource Include="Migrations\202008012147138_InitialCreate.resx">
-      <DependentUpon>202008012147138_InitialCreate.cs</DependentUpon>
+      <DependentUpon>202008012147138_InitialCreate.cs</DependentUpon
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008041743278_Migration1.resx">
       <DependentUpon>202008041743278_Migration1.cs</DependentUpon>

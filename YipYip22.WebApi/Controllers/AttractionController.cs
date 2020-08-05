@@ -25,25 +25,44 @@ namespace YipYip22.WebApi.Controllers
 
             return Ok();
         }
-        //Create
+        //Create method used to access service layer for each CRUD operation in controller
         private AttractionService CreateAttractionService()
         {
             var userid = Guid.Parse(User.Identity.GetUserId());
-            var noteservice = new AttractionService();
+            var noteservice = new AttractionService(userid);
             return noteservice;
         }
-        //Update
-        //public IHttpActionResult Put(AttractionEdit note)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
+        //READ
+        public IHttpActionResult Get()
+        {
+            AttractionService attractionService = CreateAttractionService();
+            var attractions = attractionService.GetAllAttractions();
+            return Ok(attractions);
+        }
+        //UPDATE
+        public IHttpActionResult Put(AttractionEdit attraction)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
+            var service = CreateAttractionService();
+
+            if (!service.UpdateAttraction(attraction))
+                return InternalServerError();
+
+            return Ok();
+        }
+        //DELETE
+        //public IHttpActionResult Delete(int id)
+        //{
         //    var service = CreateAttractionService();
 
-        //    if (!service.UpdateAttraction(note))
+        //    if (!service.DeleteAttraction(id))
         //        return InternalServerError();
 
         //    return Ok();
         //}
+        
+
     }
 }

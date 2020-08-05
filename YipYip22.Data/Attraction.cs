@@ -22,7 +22,6 @@ namespace YipYip22.Data
         Avon,
         Brownsburg,
     }
-
     public class Attraction
     {
         [Key]
