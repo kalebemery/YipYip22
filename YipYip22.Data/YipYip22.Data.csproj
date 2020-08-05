@@ -86,10 +86,6 @@
   <ItemGroup>
     <Compile Include="Attraction.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202008041807045_Fix foreign key.cs" />
-    <Compile Include="Migrations\202008041807045_Fix foreign key.Designer.cs">
-      <DependentUpon>202008041807045_Fix foreign key.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Profile.cs" />
@@ -99,11 +95,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008041807045_Fix foreign key.resx">
-      <DependentUpon>202008041807045_Fix foreign key.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
