@@ -28,7 +28,7 @@ namespace YipYip22.Data
         public Location PropertyLocation { get; set; }
         [Required]
 
-        [ForeignKey(nameof(OwnerId))]
+        [ForeignKey(nameof(Owner))]
         public int OwnerId { get; set; }
         public virtual Owner Owner { get; set; }
         public virtual ICollection<Attraction> Attraction { get; set; } = new List<Attraction>();

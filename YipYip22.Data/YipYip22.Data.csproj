@@ -86,6 +86,15 @@
   <ItemGroup>
     <Compile Include="Attraction.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202008012147138_InitialCreate.cs" />
+    <Compile Include="Migrations\202008012147138_InitialCreate.Designer.cs">
+      <DependentUpon>202008012147138_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008041743278_Migration1.cs" />
+    <Compile Include="Migrations\202008041743278_Migration1.Designer.cs">
+      <DependentUpon>202008041743278_Migration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +103,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008012147138_InitialCreate.resx">
+      <DependentUpon>202008012147138_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008041743278_Migration1.resx">
+      <DependentUpon>202008041743278_Migration1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
