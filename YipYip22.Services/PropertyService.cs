@@ -60,6 +60,7 @@ namespace YipYip22.Services
                             WeekDayRate = e.WeekdayRate,
                             WeekendRate = e.WeekendRate,
                             Rating = e.Rating,
+                            PropertyLocation = e.PropertyLocation,
                         }
 
                         );
@@ -85,7 +86,8 @@ namespace YipYip22.Services
                      Desc = property.Desc,
                      WeekDayRate = property.WeekdayRate,
                      WeekendRate = property.WeekendRate,
-                     Rating = property.Rating
+                     Rating = property.Rating,
+                     PropertyLocation = property.PropertyLocation
 
                  };
             }
