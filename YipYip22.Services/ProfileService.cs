@@ -27,7 +27,6 @@ namespace YipYip22.Services
                     Email = model.Email,
                     Rating = model.Rating,
                 };
-
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Profiles.Add(entity);
@@ -53,7 +52,6 @@ namespace YipYip22.Services
                                     Rating = e.Rating,
                                 }
                         );
-
                 return query.ToArray();
             }
         }
