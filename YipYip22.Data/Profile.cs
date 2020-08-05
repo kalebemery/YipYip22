@@ -16,8 +16,7 @@ namespace YipYip22.Data
         [Required]
         public string ProfileName { get; set; }
         [Required]
-        public int Phone { get; set; }
-
+        public string Phone { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }

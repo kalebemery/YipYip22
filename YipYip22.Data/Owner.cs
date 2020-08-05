@@ -17,18 +17,17 @@ namespace YipYip22.Data
         [Required]
         public string ProfileName { get; set; }
         [Required]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }
         public int? Rating { get; set; }
         [Required]
         public DateTime Created { get; set; }
-        [ForeignKey(nameof(ProfileId))]
+        [ForeignKey(nameof(Profile))]
         [Required]
         public int ProfileId { get; set; }
         public virtual Profile Profile { get; set; }
         public virtual ICollection<Property> OwnerProperties { get; set; } = new List<Property>();
-
     }
 }

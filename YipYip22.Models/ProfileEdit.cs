@@ -16,11 +16,10 @@ namespace YipYip22.Models
         public string ProfileName { get; set; }
         [Required]
         [Display(Name = "Phone")]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
-
         [Display(Name = "Rating")]
         public int Rating { get; set; }
     }

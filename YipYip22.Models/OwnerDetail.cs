@@ -14,7 +14,7 @@ namespace YipYip22.Models
         public Guid Id { get; set; }
         [Required]
         public string ProfileName { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [EmailAddress]
         public string Email { get; set; }
         public int? Rating { get; set; }
