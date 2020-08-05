@@ -17,7 +17,7 @@ namespace YipYip22.Services
             _userId = userId;
         }
         private readonly ApplicationDbContext _context = new ApplicationDbContext();
-        //CREATE
+        //CREATE ATTRACTION
         public bool CreateAttraction(AttractionCreate model)
         {
             Attraction attraction = new Attraction
@@ -27,12 +27,13 @@ namespace YipYip22.Services
                 AttractionRating = model.AttractionRating,
                 AttractionLocation = model.AttractionLocation
             };
-            using (ApplicationDbContext ctx = new ApplicationDbContext()) 
+            using (ApplicationDbContext ctx = new ApplicationDbContext())
             {
                 ctx.Attractions.Add(attraction);
                 return ctx.SaveChanges() == 1;
-                    }
+            }
         }
+        //GET LIST OF ATTRACTIONS
         public List<AttractionListItem> GetAllAttractions()
         {
             var attractions = _context.Attractions.ToList();
@@ -46,12 +47,31 @@ namespace YipYip22.Services
             }).ToList();
             return attractionList;
         }
-        //Get by property Id
-        //public List<AttractionListItem> GetAttractionByLocation(List<AttractionLocation> area)
+        //UPDATE ATTRACTION
+        public bool UpdateAttraction(AttractionEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.Attractions.Single(e => e.AttractionId == model.AttractionId);
+                entity.AttractionId = model.AttractionId;
+                entity.Name = model.Name;
+                entity.AttractionRating = model.AttractionRating;
+                return ctx.SaveChanges() == 1;
+            }
+        }
+        //DELETE ATTRACTION
+        //public bool DeleteAttraction(int attractionId)
         //{
-        //    var attractionLocation = _context.Attractions.Find(area);
-        //    var attractionList
-        //}
+        //    using (var ctx = new ApplicationDbContext())
+        //    {
+        //        var entity =
+        //            ctx
+        //            .Attractions
+        //            .Single(e => e.AttractionId == attractionId);
 
+        //        ctx.Attractions.Remove(entity);
+        //        return ctx.SaveChanges() == 1;
+        //    }
+        //}
     }
 }
