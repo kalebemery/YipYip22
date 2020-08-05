@@ -20,7 +20,7 @@ namespace YipYip22.Data
         BeachGrove,
         Greenwood,
         Avon,
-        Brownsburg
+        Brownsburg,
     }
     public class Attraction
     {
@@ -34,7 +34,5 @@ namespace YipYip22.Data
         public int AttractionRating { get; set; }
         [Required]
         public Location AttractionLocation { get; set; }
-        
-
     }
 }

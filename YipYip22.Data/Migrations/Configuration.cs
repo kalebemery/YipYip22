@@ -11,6 +11,7 @@ namespace YipYip22.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+
             ContextKey = "YipYip22.Data.ApplicationDbContext";
         }
 

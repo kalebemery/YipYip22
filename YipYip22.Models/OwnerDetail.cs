@@ -14,11 +14,24 @@ namespace YipYip22.Models
         public Guid Id { get; set; }
         [Required]
         public string ProfileName { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [EmailAddress]
         public string Email { get; set; }
         public int? Rating { get; set; }
         public DateTime Created { get; set; }
-        public virtual ICollection<Property> OwnerProperties { get; set; } = new List<Property>();
+        public List<Property> OwnerProperties
+        {
+            get
+            {
+                foreach (Property properties in OwnerProperties)
+                {
+                    if (OwnerId == properties.OwnerId)
+                        return OwnerProperties;
+
+                }
+                return null;
+            }
+            set { OwnerProperties = value; }
+        }
     }
 }

@@ -28,10 +28,23 @@ namespace YipYip22.Models
         public double WeekendRate { get; set; }
         [Display(Name = "Rating")]
         public int Rating { get; set; }
-        public ICollection<Attraction> Attraction { get; set; }
         public Location PropertyLocation { get; set; }
-        public Location AttractionLocation { get; set; }
+        public List<Attraction> attractions
+        {
+            get
+            {
+                {
+                    foreach (Attraction attraction in attractions)
+                    {
 
-        //list of attractions - match property location to attraction location
+                        if (PropertyLocation == attraction.AttractionLocation)
+                        {
+                            return attractions;
+                        }
+                    }
+                    return null;
+                }
+            }
+        }
     }
 }

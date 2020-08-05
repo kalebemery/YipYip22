@@ -17,7 +17,7 @@ namespace YipYip22.Data
         [Required]
         public string ProfileName { get; set; }
         [Required]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }
@@ -28,7 +28,7 @@ namespace YipYip22.Data
         [Required]
         public int ProfileId { get; set; }
         public virtual Profile Profile { get; set; }
-        public virtual ICollection<Property> OwnerProperties { get; set; } = new List<Property>();
+        public List<Property> OwnerProperties { get; set; } = new List<Property>();
 
     }
 }

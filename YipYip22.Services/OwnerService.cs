@@ -54,7 +54,7 @@ namespace YipYip22.Services
                         Email = entity.Email,
                         Rating = entity.Rating,
                         Created = entity.Created,
-                        OwnerProperties = entity.OwnerProperties
+                        //OwnerProperties = entity.OwnerProperties
                     };
             }
         }
