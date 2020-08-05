@@ -19,6 +19,7 @@ namespace YipYip22.Services
         //CREATE PROPERTY
         public bool CreateProperty(PropertyCreate model)
         {
+           
             var property = new Property()
             {
                 OwnerId = model.OwnerId,
