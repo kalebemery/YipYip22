@@ -28,7 +28,7 @@ namespace YipYip22.Data
         [Required]
         public int ProfileId { get; set; }
         public virtual Profile Profile { get; set; }
-        public List<Property> OwnerProperties { get; set; } = new List<Property>();
+        public ICollection<Property> OwnerProperties { get; set; } = new List<Property>();
 
     }
 }
