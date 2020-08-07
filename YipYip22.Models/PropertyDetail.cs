@@ -29,7 +29,6 @@ namespace YipYip22.Models
         [Display(Name = "Rating")]
         public int Rating { get; set; }
         public Location PropertyLocation { get; set; }
-
-        //ATTRACTIONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        public List<Attraction> Attraction { get; set; }
     }
 }

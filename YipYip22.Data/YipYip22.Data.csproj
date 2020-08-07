@@ -158,6 +158,38 @@
     <Compile Include="Migrations\202008051843374_AH.Designer.cs">
       <DependentUpon>202008051843374_AH.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008071340035_Icollection on Owner table.cs" />
+    <Compile Include="Migrations\202008071340035_Icollection on Owner table.Designer.cs">
+      <DependentUpon>202008071340035_Icollection on Owner table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071439268_took Icolecto outof owner.cs" />
+    <Compile Include="Migrations\202008071439268_took Icolecto outof owner.Designer.cs">
+      <DependentUpon>202008071439268_took Icolecto outof owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071452543_again.cs" />
+    <Compile Include="Migrations\202008071452543_again.Designer.cs">
+      <DependentUpon>202008071452543_again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071519495_again2.cs" />
+    <Compile Include="Migrations\202008071519495_again2.Designer.cs">
+      <DependentUpon>202008071519495_again2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071731124_agai3.cs" />
+    <Compile Include="Migrations\202008071731124_agai3.Designer.cs">
+      <DependentUpon>202008071731124_agai3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071742451_again4.cs" />
+    <Compile Include="Migrations\202008071742451_again4.Designer.cs">
+      <DependentUpon>202008071742451_again4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071817467_5.cs" />
+    <Compile Include="Migrations\202008071817467_5.Designer.cs">
+      <DependentUpon>202008071817467_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008071903049_6.cs" />
+    <Compile Include="Migrations\202008071903049_6.Designer.cs">
+      <DependentUpon>202008071903049_6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Profile.cs" />
@@ -174,6 +206,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008051843374_AH.resx">
       <DependentUpon>202008051843374_AH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071340035_Icollection on Owner table.resx">
+      <DependentUpon>202008071340035_Icollection on Owner table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071439268_took Icolecto outof owner.resx">
+      <DependentUpon>202008071439268_took Icolecto outof owner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071452543_again.resx">
+      <DependentUpon>202008071452543_again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071519495_again2.resx">
+      <DependentUpon>202008071519495_again2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071731124_agai3.resx">
+      <DependentUpon>202008071731124_agai3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071742451_again4.resx">
+      <DependentUpon>202008071742451_again4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071817467_5.resx">
+      <DependentUpon>202008071817467_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008071903049_6.resx">
+      <DependentUpon>202008071903049_6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

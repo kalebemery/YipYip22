@@ -19,19 +19,7 @@ namespace YipYip22.Models
         public string Email { get; set; }
         public int? Rating { get; set; }
         public DateTime Created { get; set; }
-        public List<Property> OwnerProperties
-        {
-            get
-            {
-                foreach (Property properties in OwnerProperties)
-                {
-                    if (OwnerId == properties.OwnerId)
-                        return OwnerProperties;
+        public List<Property> OwnerProperties { get; set; }
 
-                }
-                return null;
-            }
-            set { OwnerProperties = value; }
-        }
     }
 }
