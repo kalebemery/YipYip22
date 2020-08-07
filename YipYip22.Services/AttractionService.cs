@@ -60,18 +60,18 @@ namespace YipYip22.Services
             }
         }
         //DELETE ATTRACTION
-        //public bool DeleteAttraction(int attractionId)
-        //{
-        //    using (var ctx = new ApplicationDbContext())
-        //    {
-        //        var entity =
-        //            ctx
-        //            .Attractions
-        //            .Single(e => e.AttractionId == attractionId);
+        public bool DeleteAttraction(int attractionId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Attractions
+                    .Single(e => e.AttractionId == attractionId);
 
-        //        ctx.Attractions.Remove(entity);
-        //        return ctx.SaveChanges() == 1;
-        //    }
-        //}
+                ctx.Attractions.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

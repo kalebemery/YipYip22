@@ -53,16 +53,14 @@ namespace YipYip22.WebApi.Controllers
             return Ok();
         }
         //DELETE
-        //public IHttpActionResult Delete(int id)
-        //{
-        //    var service = CreateAttractionService();
+        public IHttpActionResult Delete(int id)
+        {
+            var service = CreateAttractionService();
 
-        //    if (!service.DeleteAttraction(id))
-        //        return InternalServerError();
+            if (!service.DeleteAttraction(id))
+                return InternalServerError();
 
-        //    return Ok();
-        //}
-        
-
+            return Ok();
+        }
     }
 }

@@ -45,7 +45,16 @@ namespace YipYip22.WebApi.Controllers
 
                 return Ok();
             }
-            private OwnerService CreateOwnerService()
+        public IHttpActionResult Delete(int id)
+        {
+            var service = CreateOwnerService();
+
+            if (!service.OwnerDelete(id))
+                return InternalServerError();
+
+            return Ok();
+        }
+        private OwnerService CreateOwnerService()
             {
                 var userId = Guid.Parse(User.Identity.GetUserId());
                 var ownerService = new OwnerService(userId);

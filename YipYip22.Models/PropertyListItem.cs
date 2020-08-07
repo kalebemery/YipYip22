@@ -14,7 +14,7 @@ namespace YipYip22.Models
         [Display(Name = "Property ID")]
         public int PropertyId { get; set; }
         [Display(Name = "Owner ID")]
-        public Guid OwnerId { get; set; }
+        public int OwnerId { get; set; }
         [Display(Name = "Title")]
         public string Title { get; set; }
         [Display(Name = "Address")]
@@ -30,6 +30,11 @@ namespace YipYip22.Models
         [Display(Name = "Rating")]
         public int Rating { get; set; }
         public Location PropertyLocation { get; set; }
+<<<<<<< HEAD
+=======
+        public Guid Id { get; set; }
+        // For possible future use
+>>>>>>> 5831ebfcaa3715360d6ddbcd32cf2ca5ff375394
         public List<Attraction> Attraction { get; set; }
     }
 }

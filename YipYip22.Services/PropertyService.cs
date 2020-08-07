@@ -21,7 +21,7 @@ namespace YipYip22.Services
         //CREATE PROPERTY
         public bool CreateProperty(PropertyCreate model)
         {
-           
+
             var property = new Property()
             {
                 OwnerId = model.OwnerId,
@@ -45,6 +45,7 @@ namespace YipYip22.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
+                //var attractList = GetAllAttractions();
                 var query =
                     ctx
                     .Properties
@@ -52,8 +53,8 @@ namespace YipYip22.Services
                         e =>
                         new PropertyListItem
                         {
-                            OwnerId = _userId, //needs to use profile id - this is not just for owners
-
+                            Id = _userId, //needs to use profile id - this is not just for owners
+                            OwnerId = e.OwnerId,
                             PropertyId = e.PropertyId,
                             Title = e.Title,
                             Address = e.Address,
@@ -63,15 +64,30 @@ namespace YipYip22.Services
                             WeekendRate = e.WeekendRate,
                             Rating = e.Rating,
                             PropertyLocation = e.PropertyLocation,
+                            //Attraction = (List<Attraction>)ctx.Attractions.Where(p => p.AttractionLocation == e.PropertyLocation)
                         }
-
                         );
-                return query.ToArray();
+                return query.ToList();
             }
+        }
+        public List<AttractionListItem> GetAllAttractions()
+        {
+            var _context = new ApplicationDbContext();
+            var attractions = _context.Attractions.ToList();
+            var attractionList = attractions.Select(s => new AttractionListItem
+            {
+                AttractionId = s.AttractionId,
+                Name = s.Name,
+                Type = s.Type,
+                AttractionRating = s.AttractionRating,
+                AttractionLocation = s.AttractionLocation,
+            }).ToList();
+            return attractionList;
         }
         //GET PROPERTY BY ID
         public PropertyDetail GetPropertyById(int id)
         {
+            var attractions = GetAllAttractions();
             using (var ctx = new ApplicationDbContext())
             {
                 var property =
@@ -90,7 +106,11 @@ namespace YipYip22.Services
                      WeekendRate = property.WeekendRate,
                      Rating = property.Rating,
                      PropertyLocation = property.PropertyLocation,
+<<<<<<< HEAD
 
+=======
+                     Attraction = ctx.Attractions.Where(p => p.AttractionLocation == property.PropertyLocation).ToList()
+>>>>>>> 5831ebfcaa3715360d6ddbcd32cf2ca5ff375394
                  };
             }
         }

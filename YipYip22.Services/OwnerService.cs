@@ -35,7 +35,6 @@ namespace YipYip22.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-
         public OwnerDetail GetOwnerById(int ownerid)
         {
             using (var ctx = new ApplicationDbContext())
@@ -54,7 +53,7 @@ namespace YipYip22.Services
                         Email = entity.Email,
                         Rating = entity.Rating,
                         Created = entity.Created,
-                        //OwnerProperties = entity.OwnerProperties
+                        OwnerProperties = ctx.Properties.Where(p => p.OwnerId == entity.OwnerId).ToList()
                     };
             }
         }
