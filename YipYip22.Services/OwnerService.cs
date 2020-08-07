@@ -35,40 +35,8 @@ namespace YipYip22.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        //GET ALL PROPERTIES
-        public IEnumerable<PropertyListItem> GetProperties()
+        public OwnerDetail GetOwnerById(int ownerid)
         {
-            using (var ctx = new ApplicationDbContext())
-            {
-                //var attractList = GetAllAttractions();
-                var query =
-                    ctx
-                    .Properties
-                    .Select(
-                        e =>
-                        new PropertyListItem
-                        {
-                            Id = _Id, //needs to use profile id - this is not just for owners
-                            OwnerId = e.OwnerId,
-                            PropertyId = e.PropertyId,
-                            Title = e.Title,
-                            Address = e.Address,
-                            NumOfBeds = e.NumOfBeds,
-                            Desc = e.Desc,
-                            WeekDayRate = e.WeekdayRate,
-                            WeekendRate = e.WeekendRate,
-                            Rating = e.Rating,
-                            PropertyLocation = e.PropertyLocation
-                            //Attraction = (List<Attraction>)ctx.Attractions.Where(p => p.AttractionLocation == e.PropertyLocation)
-                        }
-                        );
-                return query.ToList();
-            }
-        }
-
-            public OwnerDetail GetOwnerById(int ownerid)
-        {
-            //var propList = GetProperties();
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
