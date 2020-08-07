@@ -29,6 +29,5 @@ namespace YipYip22.Data
         public int ProfileId { get; set; }
         public virtual Profile Profile { get; set; }
         public List<Property> OwnerProperties { get; set; } = new List<Property>();
-
     }
 }
