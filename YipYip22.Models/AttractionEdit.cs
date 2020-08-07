@@ -11,6 +11,5 @@ namespace YipYip22.Models
         public int AttractionId { get; set; }
         public string Name { get; set; }
         public int AttractionRating { get; set; }
-
     }
 }
