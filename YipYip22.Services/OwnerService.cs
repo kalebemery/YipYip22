@@ -44,7 +44,7 @@ namespace YipYip22.Services
                     ctx
                         .Owners
                         .Single(e => e.OwnerId == ownerid);
-                return
+                
                     new OwnerDetail
                     {
                         OwnerId = entity.OwnerId,
@@ -54,8 +54,10 @@ namespace YipYip22.Services
                         Email = entity.Email,
                         Rating = entity.Rating,
                         Created = entity.Created,
-                        //OwnerProperties = entity.OwnerProperties
+                        OwnerProperties = entity.OwnerProperties
                     };
+                foreach(Property properties in Owner)
+                
             }
         }
 

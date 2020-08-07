@@ -68,28 +68,34 @@ namespace YipYip22.Services
             }
         }
         //GET PROPERTY BY ID
-        public PropertyDetail GetPropertyById(int id)
+        public IEnumerable<PropertyListItem> GetPropertyByOwner()
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var property =
+                var query =
                     ctx
                      .Properties
-                     .Single(e => e.PropertyId == id);
-                return
-                 new PropertyDetail
-                 {
-                     PropertyId = property.PropertyId,
-                     Title = property.Title,
-                     Address = property.Address,
-                     NumOfBeds = property.NumOfBeds,
-                     Desc = property.Desc,
-                     WeekDayRate = property.WeekdayRate,
-                     WeekendRate = property.WeekendRate,
-                     Rating = property.Rating,
-                     PropertyLocation = property.PropertyLocation
+                     .Select
+                     (e =>
 
-                 };
+                new PropertyListItem
+                {
+                    PropertyId = e.PropertyId,
+                    Title = e.Title,
+                    Address = e.Address,
+                    NumOfBeds = e.NumOfBeds,
+                    Desc = e.Desc,
+                    WeekDayRate = e.WeekdayRate,
+                    WeekendRate = e.WeekendRate,
+                    Rating = e.Rating,
+                    PropertyLocation = e.PropertyLocation
+
+                }
+                );
+                foreach(PropertyListItem properties in query)
+                    if(proper)
+                 
+                return query.ToList();
             }
         }
         //DELETE PROPERTY

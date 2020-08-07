@@ -21,5 +21,7 @@ namespace YipYip22.Data
         [EmailAddress]
         public string Email { get; set; }
         public int Rating { get; set; }
+
+        public virtual Owner OwnerId { get; set; }
     }
 }
