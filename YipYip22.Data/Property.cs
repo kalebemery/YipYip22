@@ -29,6 +29,8 @@ namespace YipYip22.Data
         [ForeignKey(nameof(Owner))]
         public int OwnerId { get; set; }
         public virtual Owner Owner { get; set; }
-        public virtual ICollection<Attraction> Attraction { get; set; } = new List<Attraction>();
+        [ForeignKey(nameof(Attraction))]
+        public int AttractionId { get; set; }
+        public virtual Attraction Attraction { get; set; }
     }
 }

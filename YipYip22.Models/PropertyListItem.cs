@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,22 +30,6 @@ namespace YipYip22.Models
         [Display(Name = "Rating")]
         public int Rating { get; set; }
         public Location PropertyLocation { get; set; }
-        public List<Attraction> attractions
-        {
-            get
-            {
-                {
-                    foreach (Attraction attraction in attractions)
-                    {
-
-                        if (PropertyLocation == attraction.AttractionLocation)
-                        {
-                            return attractions;
-                        }
-                    }
-                    return null;
-                }
-            }
-        }
+        public List<Attraction> Attraction { get; set; }
     }
 }

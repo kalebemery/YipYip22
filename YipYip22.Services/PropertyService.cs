@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 using YipYip22.Data;
@@ -87,11 +89,52 @@ namespace YipYip22.Services
                      WeekDayRate = property.WeekdayRate,
                      WeekendRate = property.WeekendRate,
                      Rating = property.Rating,
-                     PropertyLocation = property.PropertyLocation
+                     PropertyLocation = property.PropertyLocation,
 
                  };
             }
         }
+        //GET LIST OF ATTRACTIONS
+        private readonly ApplicationDbContext _context = new ApplicationDbContext();
+
+        public List<AttractionListItem> GetAllAttractions()
+        {
+            var attractions = _context.Attractions.ToList();
+            var attractionList = attractions.Select(s => new AttractionListItem
+            {
+                AttractionId = s.AttractionId,
+                Name = s.Name,
+                Type = s.Type,
+                AttractionRating = s.AttractionRating,
+                AttractionLocation = s.AttractionLocation,
+            }).ToList();
+            return attractionList;
+        }
+
+        //PROPERTY ATTRACTIONS
+        public List<Attraction> GetLocationAttractions()
+        {
+            var getList = GetAllAttractions().ToList();
+            var property = new Property();
+            var attractionLists = getList.Select(s => new Attraction
+            {
+                AttractionId = s.AttractionId,
+                Name = s.Name,
+                Type = s.Type,
+                AttractionRating = s.AttractionRating
+            }).ToList();
+
+            foreach (AttractionListItem attraction in getList)
+            {
+                if (attraction.AttractionLocation == property.PropertyLocation)
+                {
+                    return attractionLists;
+                }
+            }
+            return null;
+        }
+
+
         //DELETE PROPERTY
         public bool DeleteProperty(int propertyId)
         {
