@@ -27,11 +27,6 @@ namespace YipYip22.Data
         //[ForeignKey(nameof(Profile))]
         [Required]
         public int ProfileId { get; set; }
-<<<<<<< HEAD
-        public virtual Profile Profile { get; set; }
-        public List<Property> OwnerProperties { get; set; } = new List<Property>();
-=======
         //public virtual Profile Profile { get; set; }
->>>>>>> 5831ebfcaa3715360d6ddbcd32cf2ca5ff375394
     }
 }

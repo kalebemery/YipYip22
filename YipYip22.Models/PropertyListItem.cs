@@ -30,11 +30,8 @@ namespace YipYip22.Models
         [Display(Name = "Rating")]
         public int Rating { get; set; }
         public Location PropertyLocation { get; set; }
-<<<<<<< HEAD
-=======
         public Guid Id { get; set; }
         // For possible future use
->>>>>>> 5831ebfcaa3715360d6ddbcd32cf2ca5ff375394
         public List<Attraction> Attraction { get; set; }
     }
 }
