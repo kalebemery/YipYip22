@@ -6,7 +6,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 #### How to install the project locally:
 <br />
-(This application was built and tested in Visual Studio)
+<i>(This application was built and tested in Visual Studio)</i>
 <br />
 <br />
 1.	Go to https://github.com/kalebemery/YipYip22 
