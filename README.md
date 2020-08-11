@@ -2,9 +2,7 @@
 ## **Kris Prater, Kaleb Emery, Lisa Jeffers, Austin Hooker**
 #### *Software Development Bootcamp @ Eleven Fifty Academy*
 
-The final requirement to earn the Blue Badge for this program was to create an application programming interface (API) of our own design.
-<br />
-Our .Net Framework API Web Application provides users the ability to see properties, owners of those properties, and attractions that are in the same area as the respective properties (think Airbnb, Vrbo, etc).
+The final requirement to earn the Blue Badge for this program was to create an application programming interface (API) of our own design. Our .Net Framework API Web Application provides users the ability to see properties, owners of those properties, and attractions that are in the same area as the respective properties (think Airbnb, Vrbo, etc).
 <br />
 #### How to install the project locally:
 <br />
@@ -103,7 +101,10 @@ https://trello.com/b/HNSxnqHJ/welcome-to-trello
 <br />
 https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 <br />
-https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum<br />
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum
+<br />
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6
+<br />
         ------------------------------------------------------------------------------------------------------- <br />
 Project Created by:
 <br />
