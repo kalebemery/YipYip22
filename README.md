@@ -33,7 +33,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
 -------------------------------------------------------------------------------------------------------
 <br />
 <br />
---Order for testing API endpoints--
+-- **Order for testing API endpoints**--
 <br />
 <br />
 Profile
