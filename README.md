@@ -47,7 +47,8 @@ The final requirement to earn the Blue Badge for this program was to create an a
   <br />
   - Next, you have to enter the appropriate information into the "Body" of the Post request. 
   <br />
-  The "Key" inputs must be the same, the "Value" inputs can differ but must follow input procedures (i.e. email must be written in an email format, Password must have certain amount of characters, etc.)
+  <br />
+  The "Key" inputs must be the same as you see in the picture below, the "Value" inputs can differ but must follow input procedures (i.e. email must be written in an email format, Password must have certain amount of characters, etc.)
   <img src="https://user-images.githubusercontent.com/66280480/89943350-0cb25500-dbec-11ea-9726-e85d4ee03006.png" align="left" width="500" height="200"/>
 <br />
 <br />
@@ -57,6 +58,9 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 <br />
 <br />
+  - After you have registered for an account successfully, it is time to get a token for authorization.
+  - Change your url and body to look like this: 
+  <br />
 <b>Order for testing API endpoints</b>
 <br />
 <br />
