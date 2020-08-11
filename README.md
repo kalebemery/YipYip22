@@ -35,7 +35,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 <b>Using Postman</b>
 <br />
-<i>or similar API testing tool</i>
+<i>(or similar API testing tool)</i>
  <br />
  - Click the "New" button to create a new request.
  <br />
@@ -45,7 +45,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
  <br />
   - To do this, paste the url as mentioned in the step above, then add /api/Account/Register (i.e. http://localhost:44312/api/Account/Register)
   <br />
-  - Next, you have to enter the appropriate information into the "Body" of the Post request. 
+  - Next, you have to enter the appropriate information into the "Body" of the Post request (make sure the dropdown menu next to the URL reads "Post")
   <br />
   <br />
   The "Key" inputs must be the same as you see in the picture below, the "Value" inputs can differ but must follow input procedures (i.e. email must be written in an email format, Password must have certain amount of characters, etc.)
@@ -59,8 +59,17 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 <br />
   - After you have registered for an account successfully, it is time to get a token for authorization.
-  - Change your url and body to look like this: 
+  - Change your url and body to look like this (make sure the dropdown next to the URL reads "Post"): 
+  <img src="https://user-images.githubusercontent.com/66280480/89945628-a29baf00-dbef-11ea-86e6-5116a0839cf5.png" align="left" width="500" height="200"/>
   <br />
+  <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+  - 
 <b>Order for testing API endpoints</b>
 <br />
 <br />
