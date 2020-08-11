@@ -108,6 +108,18 @@ Owner (*One owner for each profile)
 <br />
 2.	Post an Owner (ProfileName, Phone, Email, ProfileId)
 <br />
+<img src="https://user-images.githubusercontent.com/66280480/89949731-5e5fdd00-dbf6-11ea-8f13-b56b7f53836e.png" align="left" width="500" height="200"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 Property
 <br />
