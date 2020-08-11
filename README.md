@@ -30,8 +30,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
 10.	After the content is seeded, you can now test the endpoints for the API.    
 <br />
 <br />
--------------------------------------------------------------------------------------------------------
-<br />
+---------------------------------------------------------------------------------------------------------------------------------------------------
 <br />
 <b>Order for testing API endpoints</b>
 <br />
@@ -91,7 +90,7 @@ Property - Get Property (All), Get Property by Id(brings in the attractions that
 <br />
 	Attractions – Post Attraction, Get Attractions(All), Put Attraction, Delete Attraction
 <br />
--------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 <br />
 <b>Additional Resources used</b>: 
 <br />
@@ -105,7 +104,8 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/
 <br />
 https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6
 <br />
-        ------------------------------------------------------------------------------------------------------- <br />
+---------------------------------------------------------------------------------------------------------------------------------------------------
+<br />
 <b>Project Created by</b>:
 <br />
 @kalebemery
