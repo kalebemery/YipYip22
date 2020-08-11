@@ -14,6 +14,13 @@ The final requirement to earn the Blue Badge for this program was to create an a
 2.	On this page, make sure you are on the master branch (located directly above the blue box containing the name of the last committed changes)
 <br />
 3.	Once you know you are on the master branch, click the green box containing “Code” and copy the URL given in the dropdown menu, either by copying the link manually or clicking the clipboard icon. 
+<img src="https://user-images.githubusercontent.com/66280480/89951164-e6df7d00-dbf8-11ea-8209-9c967092f45f.png" align="left" width="500" height="150"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 4.	Now you can navigate to where you’d like the project to be stored, and open your command prompt. 
 <br />
