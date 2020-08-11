@@ -70,7 +70,16 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 <br />
   - Postman should return to you an access token. You have to copy this access token and put it in the Authorization -> Bearer Token text bar given when making a request.
-  
+  <img src="https://user-images.githubusercontent.com/66280480/89946677-476abc00-dbf1-11ea-9e4b-854eab1b0257.png" align="left" width="500" height="200"/>
+  <br />
+  <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <b>Order for testing API endpoints</b>
 <br />
 <br />
