@@ -92,6 +92,17 @@ Profile
 <br />
 1.	Post a Profile (ProfileName, Phone, Email, Rating)
 <br />
+<img src="https://user-images.githubusercontent.com/66280480/89949264-a16d8080-dbf5-11ea-99f4-ee93aceffa4b.png" align="left" width="500" height="200"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 Owner (*One owner for each profile)
 <br />
