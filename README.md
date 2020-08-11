@@ -102,10 +102,16 @@ Property
 <br />
 3.	Post a Property (Title, Address, NumOfBeds, Desc, WeekDayRate, WeekendRate, PropertyLocation, OwnerId)
 <br />
+*When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values:
+<img src="https://user-images.githubusercontent.com/66280480/89948374-fe683700-dbf3-11ea-908b-a23653ed05e1.png" align="left" width="500" height="200"/>
 <br />
-*When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values: 
 <br />
-
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <b>Once those entities are created, you can then test the remaining endpoints accordingly</b>: 
