@@ -27,11 +27,26 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 9.	Next, click inside the package manager console and type “update-database” (this will seed the ‘attractions’ table)
 <br />
-10.	After the content is seeded, you can now test the endpoints for the API.    
+10.	After the content is seeded, you can now run the API.    
 <br />
 <br />
----------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 <br />
+<br />
+<b>Using Postman</b>
+*or similar API testing tool*
+ <br />
+ - Click the "New" button to create a new request.
+ <br />
+ - Copy the url from the API you are running, and paste it into the request area for Postman.
+ <br />
+ - To start testing the API, you must first register an account
+ <br />
+  - To do this, paste the url as mentioned in the step above, then add /api/Account/Register (i.e. http://localhost:44312/api/Account/Register)
+  <br />
+  - Next, you have to enter the appropriate information into the "Body" of the Post request. 
+  <br />
+  
 <b>Order for testing API endpoints</b>
 <br />
 <br />
