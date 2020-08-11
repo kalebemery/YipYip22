@@ -125,8 +125,18 @@ Property
 <br />
 3.	Post a Property (Title, Address, NumOfBeds, Desc, WeekDayRate, WeekendRate, PropertyLocation, OwnerId)
 <br />
-*When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values:
+*When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values(you can either write the number or spell out the location):
 <img src="https://user-images.githubusercontent.com/66280480/89948374-fe683700-dbf3-11ea-908b-a23653ed05e1.png" align="left" width="500" height="200"/>
+<br/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<img src="https://user-images.githubusercontent.com/66280480/89950481-ae8b6f00-dbf7-11ea-9d99-4313ce9d4666.png" align="left" width="500" height="250"/>
+<br />
 <br />
 <br />
 <br />
