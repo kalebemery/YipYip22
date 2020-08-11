@@ -9,6 +9,7 @@ namespace YipYip22.Models
 {
     public class OwnerEdit
     {
+        [Display(Name = "OwnerId")]
         public int OwnerId { get; set; }
         [Required]
         [Display(Name = "Name")]

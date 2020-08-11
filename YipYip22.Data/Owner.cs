@@ -21,7 +21,6 @@ namespace YipYip22.Data
         [Required]
         [EmailAddress]
         public string Email { get; set; }
-        public int? Rating { get; set; }
         [Required]
         public DateTime Created { get; set; }
         //[ForeignKey(nameof(Profile))]

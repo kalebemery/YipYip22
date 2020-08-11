@@ -10,6 +10,7 @@ namespace YipYip22.Models
 {
     public class AttractionListItem
     {
+        [Display(Name = "AttractionId")]
         public int AttractionId { get; set; }
         [Display(Name = "Type of Attraction")]
         public string Type { get; set; }
