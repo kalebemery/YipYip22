@@ -46,10 +46,19 @@ The final requirement to earn the Blue Badge for this program was to create an a
   <br />
   - Next, you have to enter the appropriate information into the "Body" of the Post request. 
   <br />
-  
+  <img src="https://user-images.githubusercontent.com/66280480/89943350-0cb25500-dbec-11ea-9726-e85d4ee03006.png" align="left" width="300" height="150"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <b>Order for testing API endpoints</b>
 <br />
 <br />
+
 Profile
 <br />
 1.	Post a Profile (ProfileName, Phone, Email, Rating)
