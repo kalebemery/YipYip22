@@ -61,8 +61,8 @@ The final requirement to earn the Blue Badge for this program was to create an a
   - After you have registered for an account successfully, it is time to get a token for authorization.
   - Change your url and body to look like this (make sure the dropdown next to the URL reads "Post"): 
   <img src="https://user-images.githubusercontent.com/66280480/89945628-a29baf00-dbef-11ea-86e6-5116a0839cf5.png" align="left" width="500" height="200"/>
-  <br />
-  <br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -71,14 +71,19 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
   - Postman should return to you an access token. You have to copy this access token and put it in the Authorization -> Bearer Token text bar given when making a request.
   <img src="https://user-images.githubusercontent.com/66280480/89946677-476abc00-dbf1-11ea-9e4b-854eab1b0257.png" align="left" width="500" height="200"/>
-  <br />
-  <br />
 <br />
 <br />
 <br />
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+   - Now you can populate your tables and test these endpoints. (Order is important: create Profile first, then Owner, then Property) 
+   - Don't forget to use your token on each request and make sure you are in the body section when inputing information
+<br />
+---------------------------------------------------------------------------------------------------------------------------------------------------
 <br />
 <b>Order for testing API endpoints</b>
 <br />
@@ -100,29 +105,7 @@ Property
 <br />
 *When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values: 
 <br />
-DowntownIndy = 1,
-<br />
-BroadRipple = 2,
-<br />
-Speedway = 3,
-<br />
-Carmel = 4,
-<br />
-Fishers = 5,
-<br />
-FountainSquare = 6,
-<br />
-Plainfield = 7,
-<br />
-Lawrence = 8,
-<br />
-BeachGrove = 9,
-<br />
-Greenwood = 10,
-<br />
-Avon = 11,
-<br />
-Brownsburg = 12
+
 <br />
 <br />
 <b>Once those entities are created, you can then test the remaining endpoints accordingly</b>: 
