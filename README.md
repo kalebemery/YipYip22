@@ -78,7 +78,7 @@ Avon = 11,
 Brownsburg = 12
 <br />
 <br />
---Once those entities are created, you can then test the remaining endpoints accordingly: 
+<b>Once those entities are created, you can then test the remaining endpoints accordingly</b>: 
 <br />
 <br />
 Property - Get Property (All), Get Property by Id(brings in the attractions that are in the same area), Put Property, Delete Property 
@@ -93,7 +93,7 @@ Property - Get Property (All), Get Property by Id(brings in the attractions that
 <br />
 -------------------------------------------------------------------------------------------------------
 <br />
-Additional Resources used: 
+<b>Additional Resources used</b>: 
 <br />
 https://dbdiagram.io/d/5f315d0608c7880b65c5bcf3
 <br />
@@ -106,7 +106,7 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/
 https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6
 <br />
         ------------------------------------------------------------------------------------------------------- <br />
-Project Created by:
+<b>Project Created by</b>:
 <br />
 @kalebemery
 <br />
