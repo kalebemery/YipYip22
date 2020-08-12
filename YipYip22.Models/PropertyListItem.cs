@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YipYip22.Data;
 
 namespace YipYip22.Models
 {
@@ -12,7 +13,7 @@ namespace YipYip22.Models
         [Display(Name = "Property ID")]
         public int PropertyId { get; set; }
         [Display(Name = "Owner ID")]
-        public Guid OwnerId { get; set; }
+        public int OwnerId { get; set; }
         [Display(Name = "Title")]
         public string Title { get; set; }
         [Display(Name = "Address")]
@@ -27,10 +28,9 @@ namespace YipYip22.Models
         public double WeekendRate { get; set; }
         [Display(Name = "Rating")]
         public int Rating { get; set; }
-        public ICollection<Attraction> Attraction { get; set; }
+        [Display(Name = "Location")]
         public Location PropertyLocation { get; set; }
-        public Location AttractionLocation { get; set; }
-
-        //list of attractions - match property location to attraction location
+        [Display(Name = "Id")]
+        public Guid Id { get; set; }
     }
 }

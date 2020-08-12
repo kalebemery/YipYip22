@@ -57,6 +57,9 @@
     <Compile Include="AttractionCreate.cs" />
     <Compile Include="AttractionEdit.cs" />
     <Compile Include="AttractionListItem.cs" />
+    <Compile Include="BookingCreate.cs" />
+    <Compile Include="BookingDetail.cs" />
+    <Compile Include="BookingEdit.cs" />
     <Compile Include="OwnerCreate.cs" />
     <Compile Include="OwnerDetail.cs" />
     <Compile Include="OwnerEdit.cs" />

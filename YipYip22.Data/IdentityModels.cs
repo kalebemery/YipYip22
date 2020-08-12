@@ -1,6 +1,8 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -9,7 +11,6 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace YipYip22.Data
 { 
-
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
@@ -21,14 +22,12 @@ namespace YipYip22.Data
             return userIdentity;
         }
     }
-
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -37,7 +36,7 @@ namespace YipYip22.Data
         public DbSet<Property> Properties { get; set; }
         public DbSet<Attraction> Attractions { get; set; }
         public DbSet<Owner> Owners { get; set; }
-
+        public DbSet<Booking> Bookings { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -63,6 +62,5 @@ namespace YipYip22.Data
         {
             HasKey(iur => iur.UserId);
         }
-
     }
 }

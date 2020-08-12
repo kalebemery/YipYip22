@@ -19,6 +19,7 @@ namespace YipYip22.Services
         //CREATE PROPERTY
         public bool CreateProperty(PropertyCreate model)
         {
+
             var property = new Property()
             {
                 OwnerId = model.OwnerId,
@@ -49,8 +50,8 @@ namespace YipYip22.Services
                         e =>
                         new PropertyListItem
                         {
-                            OwnerId = _userId, //needs to use profile id - this is not just for owners
-
+                            Id = _userId,
+                            OwnerId = e.OwnerId,
                             PropertyId = e.PropertyId,
                             Title = e.Title,
                             Address = e.Address,
@@ -59,10 +60,10 @@ namespace YipYip22.Services
                             WeekDayRate = e.WeekdayRate,
                             WeekendRate = e.WeekendRate,
                             Rating = e.Rating,
+                            PropertyLocation = e.PropertyLocation,
                         }
-
                         );
-                return query.ToArray();
+                return query.ToList();
             }
         }
         //GET PROPERTY BY ID
@@ -78,14 +79,16 @@ namespace YipYip22.Services
                  new PropertyDetail
                  {
                      PropertyId = property.PropertyId,
+                     OwnerId = property.OwnerId,
                      Title = property.Title,
                      Address = property.Address,
                      NumOfBeds = property.NumOfBeds,
                      Desc = property.Desc,
                      WeekDayRate = property.WeekdayRate,
                      WeekendRate = property.WeekendRate,
-                     Rating = property.Rating
-
+                     Rating = property.Rating,
+                     PropertyLocation = property.PropertyLocation,
+                     Attraction = ctx.Attractions.Where(p => p.AttractionLocation == property.PropertyLocation).ToList()
                  };
             }
         }

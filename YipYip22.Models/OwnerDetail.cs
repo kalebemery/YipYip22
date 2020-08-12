@@ -10,15 +10,21 @@ namespace YipYip22.Models
 {
     public class OwnerDetail
     {
+        [Display(Name = "OwnerId")]
         public int OwnerId { get; set; }
+        [Display(Name = "Id")]
         public Guid Id { get; set; }
         [Required]
+        [Display(Name = "ProfileName")]
         public string ProfileName { get; set; }
-        public int Phone { get; set; }
+        [Display(Name = "Phone")]
+        public string Phone { get; set; }
         [EmailAddress]
+        [Display(Name = "Email")]
         public string Email { get; set; }
-        public int? Rating { get; set; }
+        [Display(Name = "Created")]
         public DateTime Created { get; set; }
-        public virtual ICollection<Property> OwnerProperties { get; set; } = new List<Property>();
+        [Display(Name = "Properties")]
+        public List<Property> OwnerProperties { get; set; }
     }
 }

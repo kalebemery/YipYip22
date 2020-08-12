@@ -28,8 +28,9 @@ namespace YipYip22.Models
         public double WeekendRate { get; set; }
         [Display(Name = "Rating")]
         public int Rating { get; set; }
+        [Display(Name = "PropertyLocation")]
         public Location PropertyLocation { get; set; }
-
-        //ATTRACTIONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        [Display(Name = "Attraction")]
+        public List<Attraction> Attraction { get; set; }
     }
 }

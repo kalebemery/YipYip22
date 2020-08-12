@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttractionService.cs" />
+    <Compile Include="BookingService.cs" />
     <Compile Include="OwnerService.cs" />
     <Compile Include="ProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,11 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YipYip22.Data\YipYip22.Data.csproj">
-      <Project>{B7488097-7A5C-4F68-8201-952903E2A02D}</Project>
+      <Project>{b7488097-7a5c-4f68-8201-952903e2a02d}</Project>
       <Name>YipYip22.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\YipYip22.Models\YipYip22.Models.csproj">
-      <Project>{E0F59E51-856A-4E42-8332-A240AFEC7070}</Project>
+      <Project>{e0f59e51-856a-4e42-8332-a240afec7070}</Project>
       <Name>YipYip22.Models</Name>
     </ProjectReference>
   </ItemGroup>

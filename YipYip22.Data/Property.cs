@@ -12,7 +12,6 @@ namespace YipYip22.Data
     {
         [Key]
         public int PropertyId { get; set; }
-
         [Required]
         public string Title { get; set; }
         [Required]
@@ -27,10 +26,8 @@ namespace YipYip22.Data
         public int Rating { get; set; }
         public Location PropertyLocation { get; set; }
         [Required]
-
-        [ForeignKey(nameof(OwnerId))]
+        [ForeignKey(nameof(Owner))]
         public int OwnerId { get; set; }
-        public virtual Owner Owner { get; set; }
-        public virtual ICollection<Attraction> Attraction { get; set; } = new List<Attraction>();
+        public Owner Owner { get; set; }
     }
 }
