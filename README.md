@@ -105,9 +105,9 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <b>Order for testing API endpoints</b>
 <br />
 <br />
-Profile
+1. Profile
 <br />
-1.	Post a Profile (ProfileName, Phone, Email, Rating)
+Post a Profile (ProfileName, Phone, Email, Rating)
 <br />
 <img src="https://user-images.githubusercontent.com/66280480/89949264-a16d8080-dbf5-11ea-99f4-ee93aceffa4b.png" align="left" width="500" height="200"/>
 <br />
@@ -121,9 +121,9 @@ Profile
 <br />
 <br />
 <br />
-Owner (*One owner for each profile)
+2. Owner (*One owner for each profile)
 <br />
-2.	Post an Owner (ProfileName, Phone, Email, ProfileId)
+Post an Owner (ProfileName, Phone, Email, ProfileId)
 <br /> *to obtain a Profile Id, you must perform a GET on the Profile url from above
 <br />
 <img src="https://user-images.githubusercontent.com/66280480/89950094-e6de7d80-dbf6-11ea-8662-cc1bf72438a2.png" align="left" width="500" height="200"/>
@@ -139,9 +139,9 @@ Owner (*One owner for each profile)
 <br />
 <br />
 <br />
-Property
+3. Property
 <br />
-3.	Post a Property (Title, Address, NumOfBeds, Desc, WeekDayRate, WeekendRate, PropertyLocation, OwnerId)
+Post a Property (Title, Address, NumOfBeds, Desc, WeekDayRate, WeekendRate, PropertyLocation, OwnerId)
 <br />
 *When posting a Property, the attribute PropertyLocation is an enum in our project and must be assigned one of 12 values(you can either write the number or spell out the location):
 <img src="https://user-images.githubusercontent.com/66280480/89948374-fe683700-dbf3-11ea-908b-a23653ed05e1.png" align="left" width="500" height="200"/>
