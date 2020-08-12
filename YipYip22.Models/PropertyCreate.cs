@@ -36,5 +36,4 @@ namespace YipYip22.Models
         public Location PropertyLocation { get; set; }
         public int OwnerId { get; set; }
     }
-
 }
