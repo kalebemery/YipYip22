@@ -32,6 +32,5 @@ namespace YipYip22.Models
         public Location PropertyLocation { get; set; }
         [Display(Name = "Id")]
         public Guid Id { get; set; }
-        // For possible future use
     }
 }

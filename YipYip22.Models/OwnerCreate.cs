@@ -18,7 +18,7 @@ namespace YipYip22.Models
         [DataType(DataType.EmailAddress)]
         [Display(Name = "Email")]
         public string Email { get; set; }
-        [Display(Name = "Name of Attraction")]
+        [Display(Name = "ProfileId")]
         public int ProfileId { get; set; }
     }
 }

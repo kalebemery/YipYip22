@@ -11,22 +11,28 @@ namespace YipYip22.Models
     public class PropertyCreate
     {
         [Required]
-        //set min and max?
+        [Display(Name = "Title")]
         public string Title { get; set; }
         [Required]
+        [Display(Name = "Address")]
         public string Address { get; set; }
         [Required]
+        [Display(Name = "NumOfBeds")]
         public int NumOfBeds { get; set; }
         [Required]
         //set min and max?
+        [Display(Name = "Desc")]
         public string Desc { get; set; }
         [Required]
+        [Display(Name = "WeekDayRate")]
         public double WeekDayRate { get; set; }
         [Required]
+        [Display(Name = "WeekendRate")]
         public double WeekendRate { get; set; }
         //[Required]
+        [Display(Name = "Rating")]
         public int Rating { get; set; }
-        [Required]
+        [Display(Name = "Location")]
         public Location PropertyLocation { get; set; }
         public int OwnerId { get; set; }
     }

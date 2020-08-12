@@ -10,17 +10,17 @@ namespace YipYip22.Data
     public enum Location
     {
         DowntownIndy = 1,
-        BroadRipple,
-        Speedway,
-        Carmel,
-        Fishers,
-        FountainSquare,
-        Plainfield,
-        Lawrence,
-        BeachGrove,
-        Greenwood,
-        Avon,
-        Brownsburg,
+        BroadRipple =2,
+        Speedway =3,
+        Carmel =4,
+        Fishers =5,
+        FountainSquare =6,
+        Plainfield =7,
+        Lawrence =8,
+        BeachGrove =9,
+        Greenwood =10,
+        Avon =11,
+        Brownsburg =12,
     }
     public class Attraction
     {
