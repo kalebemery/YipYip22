@@ -42,6 +42,7 @@ The final requirement to earn the Blue Badge for this program was to create an a
 <br />
 10.	After the content is seeded, you can now run the API.    
 <br />
+11.	If the solution builds with an error, clean the solution, rebuild it, and try starting it again.
 <br />
 ------------------------------------------------------------------------------------------------------------------------------------------
 <br />
