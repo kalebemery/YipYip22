@@ -85,7 +85,6 @@ namespace YipYip22.Services
                 entity.ProfileName = model.ProfileName;
                 entity.Phone = model.Phone;
                 entity.Email = model.Email;
-                entity.Rating = model.Rating;
 
                 return ctx.SaveChanges() == 1;
             }

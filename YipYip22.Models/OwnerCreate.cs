@@ -12,10 +12,13 @@ namespace YipYip22.Models
         [Required]
         [Display(Name = "Owner Name")]
         public string ProfileName { get; set; }
+        [Display(Name = "Phone")]
         public string Phone { get; set; }
         [EmailAddress]
         [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email")]
         public string Email { get; set; }
+        [Display(Name = "Name of Attraction")]
         public int ProfileId { get; set; }
     }
 }

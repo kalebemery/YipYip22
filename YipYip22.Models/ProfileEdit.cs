@@ -20,7 +20,5 @@ namespace YipYip22.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
-        [Display(Name = "Rating")]
-        public int Rating { get; set; }
     }
 }

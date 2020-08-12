@@ -7,13 +7,13 @@ namespace YipYip22.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class again4 : IMigrationMetadata
+    public sealed partial class AHTusd : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(again4));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AHTusd));
         
         string IMigrationMetadata.Id
         {
-            get { return "202008071742451_again4"; }
+            get { return "202008112051372_AH-Tusd"; }
         }
         
         string IMigrationMetadata.Source

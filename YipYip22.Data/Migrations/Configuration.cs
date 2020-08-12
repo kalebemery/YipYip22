@@ -96,7 +96,56 @@ namespace YipYip22.Data.Migrations
                             Type = "Amusement / Unnecessary",
                             AttractionRating = 1,
                             AttractionLocation = Location.DowntownIndy
-                        });
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 11,
+                            Name = "Underground Tunnels of Speedway",
+                            Type = "Adventure",
+                            AttractionRating = 3,
+                            AttractionLocation = Location.Speedway
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 12,
+                            Name = "Swim with Sharks",
+                            Type = "Adventure",
+                            AttractionRating = 5,
+                            AttractionLocation = Location.FountainSquare
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 13,
+                            Name = "Skydive Plainfield",
+                            Type = "Adventure",
+                            AttractionRating = 4,
+                            AttractionLocation = Location.Plainfield
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 14,
+                            Name = "Totino's Buffet",
+                            Type = "Restaurant",
+                            AttractionRating = 4,
+                            AttractionLocation = Location.BeachGrove
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 15,
+                            Name = "Fly Swatting",
+                            Type = "Adventure",
+                            AttractionRating = 1,
+                            AttractionLocation = Location.Greenwood
+                        },
+                        new Attraction
+                        {
+                            AttractionId = 16,
+                            Name = "Life-Size Board Games",
+                            Type = "Amusement",
+                            AttractionRating = 5,
+                            AttractionLocation = Location.Brownsburg
+                        }
+                        );
         }
     }
 }

@@ -51,7 +51,6 @@ namespace YipYip22.Services
                         ProfileName = entity.ProfileName,
                         Phone = entity.Phone,
                         Email = entity.Email,
-                        Rating = entity.Rating,
                         Created = entity.Created,
                         OwnerProperties = ctx.Properties.Where(p => p.OwnerId == entity.OwnerId).ToList()
                     };

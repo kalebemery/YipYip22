@@ -96,6 +96,7 @@ namespace YipYip22.Services
                  new PropertyDetail
                  {
                      PropertyId = property.PropertyId,
+                     OwnerId = property.OwnerId,
                      Title = property.Title,
                      Address = property.Address,
                      NumOfBeds = property.NumOfBeds,
