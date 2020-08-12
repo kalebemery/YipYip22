@@ -1,98 +1,71 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YipYip22.Data;
-using YipYip22.Models;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//using YipYip22.Data;
+//using YipYip22.Models;
 
-namespace YipYip22.Services
-{
-    public class BookingService
-    {
-        private readonly Guid _Id;
-        public BookingService(Guid Id)
-        {
-            _Id = Id;
-        }
-
-
-        public bool CreateBooking(BookingCreate model)
-        {
-            var booking = new Booking()
-            {
-                BookingId = model.BookingId,
-                ProfileId = model.ProfileId,
-                PropertyId = model.PropertyId,
-                StartDate = model.StartDate,
-                EndDate = model.EndDate,
-                NumOfWeekDay = model.NumOfWeekDay,
-                NumOfWeekend = model.NumOfWeekend,
-                TotalPrice = model.TotalPrice
-
-
-            };
-            using (var ctx = new ApplicationDbContext())
-            {
-                ctx.Bookings.Add(booking);
-                return ctx.SaveChanges() == 1;
-            }
-        }
-
-        public BookingDetail GetBookingById(int renterid)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Bookings
-                        .Single(e => e.ProfileId == renterid);
-                return
-                    new BookingDetail
-                    {
-                        BookingId = entity.BookingId,
-                        ProfileId = entity.ProfileId,
-                        PropertyId = entity.PropertyId,
-                        StartDate = entity.StartDate,
-                        EndDate = entity.EndDate,
-                        NumOfWeekDay = entity.NumOfWeekDay,
-                        NumOfWeekend = entity.NumOfWeekend,
-                        TotalPrice = entity.TotalPrice
-                    };
-            }
-        }
-
-        public bool UpdateBooking(BookingEdit model)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Bookings
-                        .Single(e => e.BookingId == model.BookingId && e.ProfileId == model.ProfileId);
-                entity.StartDate = model.StartDate;
-                entity.EndDate = model.EndDate;
-                entity.NumOfWeekend = model.NumOfWeekend;
-                entity.NumOfWeekDay = model.NumOfWeekDay;
-                entity.TotalPrice = model.TotalPrice;
-
-                return ctx.SaveChanges() == 1;
-            }
-        }
-
-        public bool DeleteBooking(int bookingId)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                    .Bookings
-                    .Single(e => e.BookingId == bookingId);
-
-                ctx.Bookings.Remove(entity);
-                return ctx.SaveChanges() == 1;
-            }
-        }
-
-    }
-}
+//namespace YipYip22.Services
+//{
+//    public class BookingService
+//    {
+//        private readonly Guid _Id;
+//        public BookingService(Guid Id)
+//        {
+//            _Id = Id;
+//        }
+//        public bool CreateBooking(BookingCreate model)
+//        {
+//            var firstDay = new DateTime();
+//            DateTime.TryParse((model.StartDate).ToString(), out firstDay);
+//            var lastDay = new DateTime();
+//            DateTime.TryParse((model.EndDate).ToString(), out lastDay);
+//            Property priceOfProperty = new Property();
+//            List<Booking> book = new List<Booking>();
+//            Booking rentersBooking = new Booking();
+//            using (var ctx = new ApplicationDbContext())
+//            {
+//                var query =
+//                    ctx
+//                    .Bookings.Where(b => (firstDay >= b.StartDate && firstDay < b.EndDate || (firstDay < b.StartDate && lastDay >= b.StartDate))).ToList();
+//                int propertyId = model.PropertyId;
+//                bool unavailableRoom = book.Any(b => b.PropertyId == propertyId);
+//                if (unavailableRoom)
+//                {
+//                    return false;
+//                }
+//                else
+//                    rentersBooking.BookingId = model.BookingId;
+//                rentersBooking.ProfileId = model.ProfileId;
+//                rentersBooking.PropertyId = model.PropertyId;
+//                rentersBooking.StartDate = model.StartDate;
+//                rentersBooking.EndDate = model.EndDate;
+//                rentersBooking.TotalPrice = (priceOfProperty.WeekdayRate * rentersBooking.NumOfWeekDay) + (priceOfProperty.WeekendRate * rentersBooking.NumOfWeekend);
+//                priceOfProperty = ctx.Properties.FirstOrDefault(p => p.PropertyId == model.PropertyId);
+//                ctx.Bookings.Add(rentersBooking);
+//                return ctx.SaveChanges() == 1;
+//            }
+//        }
+//        public BookingDetail GetBookingById(int renterid)
+//        {
+//            using (var ctx = new ApplicationDbContext())
+//            {
+//                var entity =
+//                    ctx
+//                        .Bookings
+//                        .Single(e => e.ProfileId == renterid);
+//                return
+//                    new BookingDetail
+//                    {
+//                        BookingId = entity.BookingId,
+//                        ProfileId = entity.ProfileId,
+//                        PropertyId = entity.PropertyId,
+//                        StartDate = entity.StartDate,
+//                        EndDate = entity.EndDate,
+//                        TotalPrice = entity.TotalPrice
+//                    };
+//            }
+//        }
+//    }
+//}

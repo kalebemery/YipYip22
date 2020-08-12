@@ -16,6 +16,5 @@ namespace YipYip22.Models
         public int? NumOfWeekend { get; set; }
         public int? NumOfWeekDay { get; set; }
         public double TotalPrice { get; set; }
-
     }
 }

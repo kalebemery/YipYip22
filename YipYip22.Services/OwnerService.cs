@@ -11,7 +11,6 @@ namespace YipYip22.Services
     public class OwnerService
     {
         private readonly Guid _Id;
-
         public OwnerService(Guid id)
         {
             _Id = id;
@@ -28,7 +27,6 @@ namespace YipYip22.Services
                     Email = model.Email,
                     Created = DateTime.Now
                 };
-
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Owners.Add(entity);
@@ -56,7 +54,6 @@ namespace YipYip22.Services
                     };
             }
         }
-
         public bool UpdateOwner(OwnerEdit model)
         {
             using (var ctx = new ApplicationDbContext())
@@ -79,9 +76,7 @@ namespace YipYip22.Services
                     ctx
                         .Owners
                         .Single(e => e.OwnerId == ownerid && e.Id == _Id);
-
                 ctx.Owners.Remove(entity);
-
                 return ctx.SaveChanges() == 1;
             }
         }

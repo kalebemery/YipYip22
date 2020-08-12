@@ -26,6 +26,5 @@ namespace YipYip22.Models
         public DateTime Created { get; set; }
         [Display(Name = "Properties")]
         public List<Property> OwnerProperties { get; set; }
-
     }
 }

@@ -68,7 +68,6 @@ namespace YipYip22.Services
                     ctx
                     .Attractions
                     .Single(e => e.AttractionId == attractionId);
-
                 ctx.Attractions.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
